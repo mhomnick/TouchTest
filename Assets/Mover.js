@@ -18,10 +18,7 @@ function Start () {
 }
 
 function Update () {
-	//transform.Translate(0,0,speed * Time.deltaTime);
-	//if (planes.transform.localScale.z > .1){
-	//	planes.transform.localScale.z = speed * .1;
-	//}
+
 		if ((Input.GetKey("d")) || Input.touchCount	> 0 || Input.GetMouseButton(0)){
 			if ((speed < maxSpeed) && (speed < 0)){
 				speed += decel * Time.deltaTime;
